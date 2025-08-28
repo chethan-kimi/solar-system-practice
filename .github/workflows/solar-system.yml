@@ -21,6 +21,11 @@ jobs:
             path: eeee.sh
 
 
+        - name: to download artifacts
+          uses: actions/download-artifact@v5
+          with:
+            name: my-artifact
+
  
 
 
