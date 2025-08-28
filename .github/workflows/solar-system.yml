@@ -16,8 +16,8 @@ jobs:
 
         - name: Execute shell scripts
           run: |
-            chmod +x cowsay-code.sh 
-            ./github/workflows/cowsay-code.sh
+            chmod +x eeee.sh 
+            ./eeee.sh
 
 
  
