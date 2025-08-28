@@ -4,8 +4,8 @@ on:
   push:
     
 jobs:
-    unit-testing:
-        name: Unit Testing
+    unit-testing1:
+        name: Unit Testing1
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repository
@@ -20,7 +20,16 @@ jobs:
             name: my-artifact1
             path: test-folder
 
+    unit-testing2:
+        needs: unit-testing1
+        name: Unit Testing2
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
 
+        - name: List Repo files
+          run: ls -ltra
         - name: to download artifacts
           uses: actions/download-artifact@v5
           with:
