@@ -11,11 +11,10 @@ jobs:
         - name: Checkout Repository
           uses: actions/checkout@v4
         - name: Welcome Message
-          run: echo "My first job"
-          
-        - name: list files
-          run: ls
+          run: |
+            echo "My first job"
+            ls -ltra
+            cat README.md
 
-        - name: readfile
-          run : cat README.md
+
 
