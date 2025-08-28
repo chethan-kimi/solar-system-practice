@@ -14,10 +14,11 @@ jobs:
         - name: List Repo files
           run: ls -ltra
 
-        - name: Execute shell scripts
-          run: |
-            chmod +x eeee.sh 
-            ./eeee.sh
+        - name: to upload artifacts
+          uses: actions/upload-artifact@v4
+          with:
+            name: my-artifact
+            path: eeee.sh
 
 
  
