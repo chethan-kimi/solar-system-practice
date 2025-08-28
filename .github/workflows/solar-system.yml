@@ -1,0 +1,21 @@
+name: Solar System Workflow
+
+on: 
+  push:
+    
+jobs:
+    unit-testing:
+        name: Unit Testing
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+        - name: Welcome Message
+          run: echo "My first job"
+          
+        - name: list files
+          run: ls
+
+        - name: readfile
+          run : cat README.md
+
