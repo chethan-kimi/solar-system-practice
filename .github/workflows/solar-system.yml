@@ -15,7 +15,7 @@ jobs:
           run: ls -ltra
 
         - name: Execute shell scripts
-          run: ./github/workflows/cowsay.sh
+          run: ./github/workflows/cowsay-code.sh
 
 
  
