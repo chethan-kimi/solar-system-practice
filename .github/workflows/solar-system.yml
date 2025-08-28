@@ -17,7 +17,7 @@ jobs:
         - name: Execute shell scripts
           run: |
             chmod +x eeee.sh 
-            
+            ./eeee.sh
 
 
  
