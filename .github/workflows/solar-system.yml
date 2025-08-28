@@ -10,11 +10,15 @@ jobs:
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
-        - name: Welcome Message
-          run: |
-            echo "My first job"
-            ls -ltra
-            cat README.md
+
+        - name: List Repo files
+          run: 
+
+        - name: Execute shell scripts
+          run: ./cowsay.sh
+
+
+ 
 
 
 
